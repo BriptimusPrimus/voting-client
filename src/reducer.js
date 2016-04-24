@@ -25,10 +25,10 @@ function resetVote(state) {
 
 export default function(state = Map(), action) {
   switch (action.type) {
-  case 'SET_STATE':
-    return resetVote(setState(state, action.state));
-  case 'VOTE':
-    return vote(state, action.entry);
+    case 'SET_STATE':
+      return resetVote(setState(state, action.state));
+    case 'VOTE':
+      return vote(state, action.entry);
   }
   return state;
 }
